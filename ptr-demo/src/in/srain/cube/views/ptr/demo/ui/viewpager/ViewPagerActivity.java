@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 import in.srain.cube.mints.base.TitleBaseActivity;
 import in.srain.cube.request.JsonData;
 import in.srain.cube.request.RequestFinishHandler;
@@ -21,8 +23,6 @@ import in.srain.cube.views.ptr.PtrFrameLayout;
 import in.srain.cube.views.ptr.PtrHandler;
 import in.srain.cube.views.ptr.demo.R;
 import in.srain.cube.views.ptr.demo.data.DemoRequestData;
-
-import java.util.ArrayList;
 
 public class ViewPagerActivity extends TitleBaseActivity {
 
@@ -93,6 +93,8 @@ public class ViewPagerActivity extends TitleBaseActivity {
     private void switchTo(int position) {
         mPagerAdapter.switchTO(position);
     }
+
+    /****************************************自定义适配器*********************************************/
 
     private class FragmentViewPagerAdapter extends FragmentStatePagerAdapter {
 
